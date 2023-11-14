@@ -1,1 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{color: white;
+            }
+        body{
+            background-color: rgb(54, 51, 51);
+            margin: 0%;
+            padding: 0%;
+            height:vh;
+            width: vw;
+            background-attachment: scroll;
+            background-position: center;
+        }
+        .logo img{
+            border: 50%;
+            height: 6rem;
+            width: 6rem;
 
+        }
+        .top{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            height: 7rem;
+            position: fixed;
+            background-color: rgb(65, 64, 64);
+        }
+        a{
+            text-decoration: none;
+            color: whitesmoke;
+            margin-left: 2rem;
+            cursor: pointer;
+            text-shadow: 0.5rem;
+        }
+        nav{
+            margin-top: 2rem;
+            margin-right: 5rem;
+        }
+        .mainside{
+            display: flex;
+            width: 28%;
+            flex-direction: column;
+            height: 40rem;
+            justify-content: space-between;
+        }
+        .mainside img{
+            height: 15rem;
+            width: 16rem;
+            cursor: pointer;
+        }
+        .mainside img:hover{
+            height: 16.5rem;
+            width:18.5rem;
+        }
+    .parent{
+        display: flex;
+        justify-content: space-between;
+        height: 40rem;
+        width: 100%;
+       padding-top: 10rem;
+        
+  
+
+    }
+  
+    .sidemain img{
+        height:80%;
+        cursor: pointer;
+        width: 23rem;
+        margin-top: 3.5rem;
+        
+    }
+    .sidemain img:hover{
+        height: 83%;
+    }
+    .parent h1{
+        padding-top: 3.5rem;
+        font-size: 5.7rem;
+        font-family: mistral;
+        cursor: pointer;
+        margin-left: 3rem;
+        padding-bottom: 5rem;
+    }
+  input{
+        height: 3rem;
+        width: 20rem;
+        border-radius: 3rem 0 0 3rem;
+        font-size: 2rem;
+        color: white;
+        padding-left: 4rem;
+        box-shadow: 0.2rem 0.2rem 0.2rem rgb(87, 85, 85);
+        opacity: 70%;
+        cursor: pointer;
+       
+    }
+    .parent button{
+        height: 3.37rem;
+        width: 15rem;
+        border-radius:0 3rem 3rem 0;
+        background-color: orangered;
+        box-shadow: 0.2rem 0.2rem 0.2rem rgb(87, 85, 85);
+        cursor: pointer;
+    }
+    .btntext{
+        display: flex;
+        width:35rem ;
+    }
+    .middle h1{
+        font-size: 4rem;
+        font-family: mistral;
+        padding-left: 2rem;
+    }
+    .fontchild{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+         height: 6rem;
+        width: 13rem;
+    }
+    .fontchild i{
+        font-size: 3rem;
+        color: orangered;
+    }
+    .fontparent{
+        display: flex;
+        width: 60%;
+        height: 4rem;
+        justify-content: space-around;
+    }
+    .fontmain{
+        display: flex;
+        width:100%;
+        align-items: center;
+        justify-content:space-between;
+        margin-top: 3rem;
+    }
+    .container {
+  position: relative;
+  width: 28%;
+  height: 19rem;
+ 
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+  box-shadow: 0.3rem 0.3rem 0.3rem;
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  cursor: pointer;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: rgb(10, 0, 0);
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.container BUTTON{
+    height: 2rem;
+    width: 8rem;
+    border-radius: 0.5rem;
+    background-color:orangered;
+    cursor: pointer;
+}
+.containerparent{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 5rem;
+
+}
+#btn1{
+    width: 50rem;
+    height: 3.5rem;
+    margin-left: 15rem;
+    border-radius: 5rem;
+    background-color: orangered;
+    margin-top: 3rem;
+    box-shadow: 0.2rem 0.2rem ;
+}
+.blurchild{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 30%;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+.blurchild i{
+  font-size: 9rem;
+  color: rgb(250, 247, 246);
+}
+.blurchild i:hover{
+  font-size: 9rem;
+  color: rgba(243, 104, 11, 0.904);
+  cursor: pointer;
+}
+.blurchild h1{
+  font-size: 2rem;
+  color: rgb(175, 204, 233);
+}
+.blurparent{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  height: 20rem;
+  margin-top: 8rem;
+}
+
+.blurtext{
+  display: flex;
+  width: 100%;
+  height:25rem;
+  justify-content: space-around;
+  background-color: rgb(92, 90, 90);
+  
+}
+.blurtext h2{
+  font-size: 4.5rem;
+  font-family: mistral;
+  width:29rem;
+  padding-left: 3rem;
+  color: white;
+  
+}
+.blurtext p{
+  font-size: 1.6rem;
+  font-family:math;
+  padding-top: 3rem;
+
+}
+.blurtoptext{
+  color: orangered;
+  position: relative;
+  margin-top: 10rem;
+  margin-left: 2rem;
+}
+.download{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: vw;
+  height:50rem;
+  background-color: rgb(71, 69, 69);
+  margin-top: 10rem;
+  align-items: center;
+}
+.download h3{
+  font-size: 1.5rem;
+  color: orangered;
+}
+.download h1{
+  font-size: 4rem;
+  color: white;
+  font-family: mistral;
+}
+.download2{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+
+}
+.download2 img{
+  height: 12rem;
+  width: 12rem;
+}
+.download3{
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+}
+.download3 h4:hover{
+  color: orangered;
+  cursor: pointer;
+
+}
+
+.dropbtn {
+  color: white;
+  font-size: 2.5rem;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  background-color: rgb(65, 64, 64);
+  margin-right: 2rem;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(146, 144, 144);
+  width:auto;
+  border-radius: 2%;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  width: 17rem;
+  height: 3rem;
+}
+
+.dropdown-content a:hover {
+  background-color:orangered;
+  
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: rgb(65, 64, 64);
+}
+
+.bottom{
+  height: 30rem;
+  width: 100%;
+  background-color:  rgb(31, 28, 28);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.btmicon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btmicon i{
+   margin-left: 3rem;
+   font-size: 1.7rem;
+   text-decoration: none;
+}
+.btmicon i:hover{
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  background-color: orangered;
+  align-items: center;
+  position: relative;
+}
+  </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css" integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="top">
+    <div class="logo">
+        <img src="4.png" alt="">
+    </div>
+    <div>
+        <nav>
+            <a href="#up">BROWSER FOODS</a>
+            <a href="#bottom">ABOUT US</a>
+            <a href="#download">DOWNLOAD APP</a>   
+        </nav>
+      </div>
+        <div class="dropdown">
+          <button class="dropbtn"><i class="fa-solid fa-user"></i></button>
+          <div class="dropdown-content">
+          <a href="login.html"><i class="fa-solid fa-key"></i> LOGIN</a>
+          <a href="register.html"><i class="fa-solid fa-user-plus"></i> REGISTER</a>
+          <a href="#"><i class="fa-regular fa-circle-user"></i> ACCOUNT</a>
+          <a href="#"><i class="fa-solid fa-lock"></i>LOGOUT</a>
+          </div>
+         
+        
+    </div>
+</div>
+
+
+
+<div class="parent"  id="up">
+<div class="mainside">
+    <img src="7.png" alt="">
+    <img src="6.png" alt="">
+</div>
+<div>
+    <h1>Delicious food at <br> your door step</h1>
+    <div class="btntext">
+       
+    <input type="text" placeholder="location">
+    <button> Check Food Delivery</button>
+</div>
+    
+</div>
+<div class="sidemain">
+    <img src="5.png" alt="">
+</div>
+</div>
+<div  class="fontmain">
+<div class="middle">
+    <h1>delicious food is<br> our aim.</h1>
+</div>
+<div class="fontparent">
+<div class="fontchild">
+    <i class="fa-solid fa-brush"></i>
+    <h1>1052+</h1>
+    <h2>Online Orders</h2>
+</div>
+<div class="fontchild">
+    <i class="fa-brands fa-docker"></i>
+    <h1>9800+</h1>
+    <h2>Satisfied Customers</h2>
+</div>
+<div class="fontchild">
+    <i class="fa-solid fa-mug-hot"></i>
+    <h1>3785+</h1>
+    <h2>Cup of Teas</h2>
+</div>
+</div>
+</div>
+<div class="containerparent">
+  <div class="container">
+    <img src="item1.png" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Mega Restaurant<br>
+        <button>order now</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <img src="item2.png" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">The Fast food<br>
+        <button>order now</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <img src="item3.png" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Green Bakery<br>
+        <button>order now</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="containerparent">
+  <div class="container">
+    <img src="item4.png" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Eat Firo<br>
+        <button>order now</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <img src="item5.png" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Turkish Cousine<br>
+        <button>order now</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <img src="item6.png" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">pizzario<br>
+        <button>order now</button>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<button id="btn1">BROWSE MORE FOOD OPTIONS</button>
+<h1 class="blurtoptext">Basic info about food delivery</h1>
+<div class="blurtext" id="bottom">
+<div>
+  <h2>we are behind the delicious food delivery.</h2>
+</div>
+<div><p>Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit.
+   Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin.
+    Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus.<br><br>
+
+  Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit.
+   Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus.
+  </p></div>
+</div>
+
+<div class="blurparent">
+  <div class="blurchild">
+    <i class="fa-regular fa-lightbulb"></i>
+    <h1>We have new ideas for<br> your food business.</h1>
+  </div>
+  <div class="blurchild">
+    <i class="fa-solid fa-bicycle"></i>
+    <h1>Join our amazing <br>delivery staff.</h1>
+  </div>
+  <div class="blurchild">
+    <i class="fa-regular fa-heart"></i>
+    <h1>We love our valued<br> food customers.</h1>
+  </div>
+</div>
+
+<br>
+<div class="download" id="download">
+ <div> <h3>Better experience on obile ordering</h3>
+  <h1>download our latest app<br> from mobile stores.</h1>
+ </div>
+  <div class="download2">
+    <div class="download3">
+      <div>
+    <img src="16.png" alt="">
+    <h4>iOS App Store</h4>
+    </div>
+    <div>
+      <img src="17.png" alt="">
+      <h4>Google App Store</h4>
+      </div>
+  </div>
+  </div>
+  <div class="bottom">
+ <div class="btmicon">
+   <div><i class="fa-brands fa-facebook"></i></div>
+   <div><i class="fa-brands fa-instagram"></i></div>
+   <div><i class="fa-brands fa-whatsapp"></i></div>
+   <div><i class="fa-brands fa-google-plus-g"></i></div>
+   <div><i class="fa-brands fa-invision"></i></div>
+ </div>
+ <div>
+  <h4>© 2023 MegaOne. Made With Love By Themesindustry</h4>
+</div>
+</div>
+</body>
+</html>
